@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" thread-count="2" name="test on firefox">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="ExempleClassTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" thread-count="5" name="test on chrome">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="ExempleClassTest"/>
+        </classes>
+    </test>
+</suite>
